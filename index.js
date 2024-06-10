@@ -11,7 +11,7 @@ app.use((req, res, next) => {
 });
 
 // Route to get the current time in Sri Lanka
-app.get('/current-time', (req, res) => {
+app.get('/', (req, res) => {
   try {
     // Get the current time in Sri Lanka
     const sriLankaTime = moment().tz('Asia/Colombo').format('YYYY-MM-DD HH:mm:ss');
@@ -27,11 +27,6 @@ app.get('/current-time', (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'Internal Server Error' });
   }
-});
-
-// Route for the root URL
-app.get('/', (req, res) => {
-  res.send('Welcome to the Sri Lanka Time API. Access the current time at /current-time');
 });
 
 app.listen(PORT, () => {
