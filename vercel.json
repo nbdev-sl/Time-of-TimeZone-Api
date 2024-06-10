@@ -5,8 +5,8 @@
     ],
     "routes": [
       {
-        "src": "/current-time",
-        "dest": "/current-time"
+        "src": "/",
+        "dest": "/"
       }
     ]
   }
