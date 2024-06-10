@@ -1,0 +1,16 @@
+{
+    "name": "srilanka-time-api",
+    "version": "1.0.0",
+    "description": "An API to get the current time in Sri Lanka",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "author": "NB DEV SL",
+    "license": "MIT",
+    "dependencies": {
+      "express": "^4.18.2",
+      "moment-timezone": "^0.5.40"
+    }
+  }
+  
