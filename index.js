@@ -11,7 +11,7 @@ app.use((req, res, next) => {
 });
 
 // Route to get the current time in Sri Lanka
-app.get('/current-time', (req, res) => {
+app.get('/', (req, res) => {
   try {
     // Get the current time in Sri Lanka
     const sriLankaTime = moment().tz('Asia/Colombo').format('YYYY-MM-DD HH:mm:ss');
